@@ -21,7 +21,7 @@ exports.enviaCorreo = function(req, res){
 	console.log(req.body);
 	smtpTransport.sendMail({
 		from: "PosicionLocal <contacto@posicionlocal.com>",
-		to: "Saul <enrique_wx@hotmail.com>",
+		to: "Saul <enrique_wx@hotmail.com>, Antonio dejex <antoniodejex@gmail.com>",
 		subject: "Nuevo correo",
 		text: "Has recibido un nuevo correo " + req.body.email
 	}, function(error, response){
@@ -62,7 +62,7 @@ mensaje = "Hablar con especialista: " + v1 + ".\n\n" +
 
 	smtpTransport.sendMail({
 		from: "PosicionLocal <contacto@posicionlocal.com>",
-		to: "Saul <enrique_wx@hotmail.com>",
+		to: "Saul <enrique_wx@hotmail.com>, Antonio dejex <antoniodejex@gmail.com>",
 		subject: "Nuevo correo",
 		text: mensaje
 	}, function(error, response){
