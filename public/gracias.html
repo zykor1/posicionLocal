@@ -45,7 +45,7 @@
 			       </ul>
 			        <ul class="buttons">
 			        	<li class="menu"><a>Menu</a></li>
-				        <li class="sign-in-button"><a class="button" href="http://app.posicionlocal.com/">Login</a></li>
+				        <li class="sign-in-button"><a class="button" href="/loginpl">Login</a></li>
 				        <li><a class="button red get-invite" href="#">Iniciar Campaña</a></li>
 			        </ul>
 		        </nav>
@@ -148,38 +148,38 @@
 			        <div class="survey">
 			        	<h4>¿Quieres sabes mas sobre PosiciónLocal?</h4>
 			        	<p>Marca las casillas y nos pondremos en contacto contigo en breve.</p>
-			        	<form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://posicionlocal.wufoo.com/forms/apreguntas-comentarios-inquietudes/#public">
+			        	<form method="post" novalidate action="/platiquemos">
 			        		<fieldset>
-								<input id="Field1" name="Field1" type="checkbox" class="field checkbox" value="especialista" tabindex="1" checked/>
+								<input id="Field1" name="hablar_con_especialista" type="checkbox" class="field checkbox" value="especialista" tabindex="1" checked/>
 								<label class="choice" for="Field1"><span></span>Hablar con un especialista</label><br>
-								<input id="Field2" name="Field2" type="checkbox" class="field checkbox" value="demo" tabindex="2" />
+								<input id="Field2" name="quiero_demostracion" type="checkbox" class="field checkbox" value="demo" tabindex="2" />
 								<label class="choice" for="Field2"><span></span>Quiero una desmostración</label><br>
-								<input id="Field3" name="Field3" type="checkbox" class="field checkbox" value="reunion" tabindex="3" />
+								<input id="Field3" name="solicito_reunion" type="checkbox" class="field checkbox" value="reunion" tabindex="3" />
 								<label class="choice" for="Field3"><span></span>Solicitar una reunión</label>
 			        		</fieldset>
 			        		<fieldset>
-								<input id="Field4" name="Field4" type="checkbox" class="field checkbox" value="pregunta" tabindex="4" />
+								<input id="Field4" name="tengo_pregunta" type="checkbox" class="field checkbox" value="pregunta" tabindex="4" />
 								<label class="choice" for="Field4"><span></span>Tengo una pregunta</label><br>
-								<input id="Field5" name="Field5" type="checkbox" class="field checkbox" value="campaing" tabindex="5" />
+								<input id="Field5" name="iniciar_campaña" type="checkbox" class="field checkbox" value="campaing" tabindex="5" />
 								<label class="choice" for="Field5"><span></span>Iniciar mi campaña</label><br>
-								<input id="Field6" name="Field6" type="checkbox" class="field checkbox" value="precio" tabindex="6" />
+								<input id="Field6" name="paquete_medida" type="checkbox" class="field checkbox" value="precio" tabindex="6" />
 								<label class="choice" for="Field6"><span></span>Quiero un paquete a la medida</label>
 							</fieldset>
 							<fieldset class="meeting">
 								<label class="desc" id="title107" for="Field107">¿Detalles Demo?</label>
-								<textarea id="Field107" name="Field107" spellcheck="true" tabindex="7" onkeyup=""></textarea>
+								<textarea id="Field107" name="quiero_demostracion_res" spellcheck="true" tabindex="7" onkeyup=""></textarea>
 							</fieldset>
 							<fieldset class="question">
 								<label class="desc" id="title101" for="Field101">¿Donde se llevará acabo la reunión?</label>
-								<textarea id="Field101" name="Field101" spellcheck="true" tabindex="8" onkeyup=""></textarea>
+								<textarea id="Field101" name="solicito_reunion_res" spellcheck="true" tabindex="8" onkeyup=""></textarea>
 							</fieldset>
 							<fieldset class="demo">
 								<label class="desc" id="title108" for="Field108">¿Que te gustaría saber?</label>
-								<textarea id="Field108" name="Field108" spellcheck="true" tabindex="9" onkeyup=""></textarea>			
+								<textarea id="Field108" name="tengo_pregunta_res" spellcheck="true" tabindex="9" onkeyup=""></textarea>			
 							</fieldset>
 							<fieldset class="email">
 								<label class="visuallyhidden" for="Field105">My Email Address</label>
-								<input id="Field105" name="Field105" type="email" spellcheck="false" class="field text medium" placeholder="Correo o Teléfono" maxlength="255" tabindex="10" required /> 
+								<input id="Field105" name="mail" type="email" spellcheck="false" class="field text medium" placeholder="Correo o Teléfono" maxlength="255" tabindex="10" required /> 
 								<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Enviar"/>
 							</fieldset>
 							<input type="hidden" id="idstamp" name="idstamp" value="" />
